@@ -7,7 +7,7 @@ def hello():
     long_url = request.args.get('url')
     if long_url:
         url_inst = url_shortner.UrlShortner()
-        url_inst.runtests()
+        url_inst.run_tests()
         url_inst.long_url = long_url
         print("tiny url for the requested URL is "+url_inst.run())
         return url_inst.run()
